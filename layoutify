@@ -4,6 +4,7 @@
 Generate a JSON based graph that is layed out based on input graph
 """
 
+import json
 import logging
 import sys
 from argparse import ArgumentParser
@@ -65,7 +66,7 @@ def run():
 
     format_ = generate_format(input_file)
 
-    output_file.write(str(format_))
+    output_file.write(json.dumps(format_))
 
 
 if __name__ == "__main__":
