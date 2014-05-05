@@ -68,6 +68,8 @@ def run():
 
     output_file.write(json.dumps(format_))
 
+    output_file.close()
+
 
 if __name__ == "__main__":
     run()
