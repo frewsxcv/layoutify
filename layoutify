@@ -65,7 +65,7 @@ def run():
 
     format_ = generate_format(input_file)
 
-    output_file.write(format_)
+    output_file.write(str(format_))
 
 
 if __name__ == "__main__":
